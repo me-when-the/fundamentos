@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class Agenda {
+            constructor (agenda) {
+                this.agenda = agenda
+        }
+        Nome(){
+            return `Nome: ${this.agenda}`;
+        }
+    }
+
+    class Contato extends Agenda {
+        constructor(agenda, contato){
+            super(agenda);
+            this.contato = contato;
+        }
+        Numero(){
+            return `${super.Nome()} | Número: ${this.contato}`
+        }
+    }
+
+    const agenda = new Contato ('Ana', '(24) 93398-7691')
+    document.write(agenda.Numero()) 
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

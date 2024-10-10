@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class Pessoa {
+            info(){
+                return `Nome: | Idade:`
+            }
+        }
+
+        class Pai extends Pessoa{
+            info(){
+                return `Nome: Ricardo | Idade: 35 anos`
+            }
+        }
+
+        class Mãe extends Pessoa{
+            info(){
+                return `Nome: Carla | Idade: 32 anos`
+            }
+        }
+
+        const newPai = new Pai();
+        const newMae = new Mãe();
+        document.write(newPai.info() + '</br>');
+        document.write(newMae.info())
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

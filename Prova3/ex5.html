@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+
+    function calcular(){
+        let num1 = Number(prompt('Digite o primeiro numero'));
+        let op = prompt('Digite o operador');
+        let num2 = Number(prompt('Digite o segundo numero'));
+
+            switch(op){
+                case op = '/':
+                    document.write(`${num1} / ${num2} = ${num1 / num2}`);
+                    break
+
+                case op = '*':
+                    document.write(`${num1} * ${num2} = ${num1 * num2}`);
+                    break
+            
+                case op = '-':
+                    document.write(`${num1} - ${num2} = ${num1 - num2}`);
+                    break
+                
+                case op = '+':
+                    document.write(`${num1} + ${num2} = ${num1 + num2}`);
+                    break
+                
+                default:
+                    document.write('ERROR!')
+            }
+        }
+
+        calcular();
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
